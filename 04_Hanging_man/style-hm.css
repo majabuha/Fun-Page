@@ -1,0 +1,35 @@
+*{
+    background-color: rgb(85, 57, 94);
+    color: white;
+}
+ header{
+     text-align: center;     
+     margin: 2% 0;
+ }
+
+ h1{
+    font-size: 5rem;
+ }
+
+ .float-right {
+     font-size: 1.5rem;
+ }
+
+ p {
+     font-size: 2rem;
+ }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.text-center {
+    text-align: center;    
+}
+
+.btn.btn-info {
+    margin-top: 2rem;
+}
+

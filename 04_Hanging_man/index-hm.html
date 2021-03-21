@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style-hm.css">
+  <title>Hangman</title>
+</head>
+
+<header>
+  <h1 class="text-center">Hangman Game</h1>
+  <div class="guesses">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
+  <p>Guess the Animal!</p>
+</header>
+
+<body>
+  <div class="container">
+    <div class="text-center">
+      <img id="hangmanPic" src="./images/0.jpg" alt="">
+      <p id="wordSpotlight">The word to be guessed goes here</p>
+      <div id="keyboard"></div>
+      <button class="btn btn-info" onClick="reset()">Reset</button>
+    </div>
+  </div>
+
+  <script src='script-hm.js'></script>
+</body>
+
+</html>

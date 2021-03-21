@@ -1,0 +1,66 @@
+body {
+    margin: 12% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    vertical-align: middle;
+    background-color: rgb(196, 157, 142);
+}
+
+h1 {
+    color: rgb(46, 15, 15);
+    font-size: 3rem;
+    text-align: center;
+    animation: reveal 3000ms ease-in-out forwards 100ms,
+                glow 2500ms linear infinite 2000ms;
+}
+
+@keyframes reveal {
+    80%{
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes glow {
+    20% {
+      text-shadow: 8px 0px 8px rgb(255, 255, 255);
+    }
+  }
+
+.container {
+    margin: 1rem 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, minmax(auto, 180px));
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+}
+
+a.button {    
+    text-decoration: none;
+    text-align: center;
+    color: initial;
+    font-size: 1.3rem;
+    padding: .5rem .3rem;
+    width: 12rem;
+    background-color: rgb(233, 221, 210);
+    border: 2px solid rgb(27, 26, 26);
+    border-radius: 1rem;
+}
+
+a.button:hover {
+    color: white;
+    background-color: rgb(58, 33, 33);
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(auto, 380px));
+        grid-template-rows: auto;
+        -ms-grid-column-align: center;
+}

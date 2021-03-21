@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Countries</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="style-ew.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="wrapper">
+      <div class="search">
+        <h2 class="title">Choose region</h2>
+
+        <div class="search-box">
+          <input type="text" class="search-control" placeholder="Enter search word" id="search-input">
+          <button type="submit" class="search-btn btn" id="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="result" id="result">
+        <!--     <h2 class = "title" id="search-results-h2">Search Results:</h2>
+        <div id= "name">          
+         <div class = "item">
+            <div class = "flag-img">
+              <img src = "flag.jpg" alt = "flag">
+            </div>
+            <div class = "country-name">
+              <h3>Country Name</h3>
+              <a href = "#" class = "details-btn">Details</a>
+            </div>
+          </div>          
+        </div>  -->
+      </div>
+
+
+      <div class="country-details">
+
+        <button type="button" class="btn details-close-btn" id="details-close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <div class="country-details-content">
+           <h2 class = "country-title">Country Name Here</h2>
+          <p class = "country-region"></p>
+        <!--  <div class = "country-instruct">
+            <h3>Details:</h3>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div> 
+           <div class = "flag-country-img">
+            <img src = "flag.jpg" alt = "">
+          </div>    
+        -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script-ew.js"></script>
+</body>
+
+</html>
