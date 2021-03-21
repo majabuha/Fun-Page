@@ -286,7 +286,16 @@ body{
 
 
 @media screen and (max-width: 640px){
-
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(auto, 380px));
+        grid-template-rows: auto;
+        justify-content: center;
+        align-content: center;
+        padding: 1rem 1rem;
+        margin-right: 2rem;
+        text-align: center;
+    }
     .result {
     display: grid;
     grid-template-columns: repeat(1, minmax(auto, 380px));
@@ -295,11 +304,5 @@ body{
 
     .country-details{
         width: 600px;
-    };
-
-    .title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
     };
 };
