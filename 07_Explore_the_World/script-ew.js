@@ -62,6 +62,8 @@ function getCountryDetails(alpha2Code) {
 };
 
 function countryDetailsModal(country) {
+  let languagesArray=country.languages;
+  let languages= languagesArray.map(item => item.name);
     let html = `
         <h2 class = "country-title">${country.name}</h2>
         <p class = "country-region">${country.region}</p>
@@ -76,7 +78,7 @@ function countryDetailsModal(country) {
             <p>Timezones: ${country.timezones}</p>
             <p>Borders: ${JSON.stringify(country.borders)}</p>
             <p>Native Name:${country.nativeName}</p>
-            <p>Languages: ${JSON.stringify(country.languages)}</p>
+            <p>Languages: ${languages}</p>
         </div>
     `;
     countryDetailsContent.innerHTML = html;
