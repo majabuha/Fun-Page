@@ -292,8 +292,6 @@ body{
         grid-template-rows: auto;
         justify-content: center;
         align-content: center;
-        padding: 1rem 1rem;
-        margin-right: 2rem;
         text-align: center;
     }
     .result {
