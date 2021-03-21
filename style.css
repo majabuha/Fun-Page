@@ -58,9 +58,35 @@ a.button:hover {
 }
 
 @media screen and (max-width: 640px) {
-    .container {
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: reveal 3000ms ease-in-out forwards 100ms,
+    glow 2500ms linear infinite 2000ms;
+  }
+
+@keyframes reveal {
+    80%{
+      letter-spacing: 5px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes glow {
+    20% {
+      text-shadow: 8px 0px 8px rgb(255, 255, 255);
+    }
+  }
+  
+  .container {
         display: grid;
         grid-template-columns: repeat(1, minmax(auto, 380px));
         grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5rem; 
         -ms-grid-column-align: center;
+}
 }
