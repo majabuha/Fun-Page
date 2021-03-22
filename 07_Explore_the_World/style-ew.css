@@ -284,6 +284,7 @@ body{
 
 @media screen and (max-width: 640px){
     .search{
+        margin-top: -30%;
         display: flex;
         justify-content: center;
         align-items: center;
