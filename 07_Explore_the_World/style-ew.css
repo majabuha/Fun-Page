@@ -32,11 +32,8 @@ body{
     margin: 5rem 0rem;
 }
 
-.container{
-    min-height: 100vh;
-}
-
 .wrapper{
+    min-height: 100vh;
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
@@ -286,21 +283,20 @@ body{
 
 
 @media screen and (max-width: 640px){
-    .wrapper{
-        display: grid;
-        grid-template-columns: repeat(1, minmax(auto, 380px));
-        grid-template-rows: auto;
+    .search{
+        display: flex;
         justify-content: center;
-        align-content: center;
-        text-align: center;
+        align-items: center;
+        flex-direction: column;
     }
     .result {
     display: grid;
     grid-template-columns: repeat(1, minmax(auto, 380px));
     grid-template-rows: auto;
-    };
+    }
 
     .country-details{
         width: 600px;
-    };
+    }
+
 };
