@@ -35,11 +35,12 @@
 
 
 @media screen and (max-width: 640px){
-    .text-center {
+    .container {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        text-align: center;
     }
 }
 
