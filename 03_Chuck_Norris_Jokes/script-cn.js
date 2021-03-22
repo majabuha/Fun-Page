@@ -1,5 +1,5 @@
 const jokeValue = document.getElementById('joke-value');
-const genQuoteBtn = document.getElementById('gen-quote-btn');
+const genQuoteBtn = document.getElementById('gen-joke-btn');
 
 function randomJoke() {
     fetch('https://api.chucknorris.io/jokes/random')
