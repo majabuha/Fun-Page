@@ -1,7 +1,7 @@
 const jokeValue = document.getElementById('joke-value');
 const genQuoteBtn = document.getElementById('gen-quote-btn');
 
-function randomQuote() {
+function randomJoke() {
     fetch('https://api.chucknorris.io/jokes/random')
     .then(response => response.json())
     .then(data => {
@@ -9,7 +9,7 @@ function randomQuote() {
   });
 };
 
-randomQuote();
+randomJoke();
 genQuoteBtn.addEventListener('click', () => {
-    randomQuote();
+    randomJoke();
 });
