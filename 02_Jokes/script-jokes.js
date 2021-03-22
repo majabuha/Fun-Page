@@ -3,7 +3,7 @@ const jokeType = document.getElementById('joke-type');
 const jokePunchline = document.getElementById('joke-punchline');
 const genQuoteBtn = document.getElementById('gen-quote-btn');
 
-function randomQuote() {
+function randomJoke() {
     fetch('https://official-joke-api.appspot.com/jokes/random')
     .then(response => response.json())
     .then(data => {
@@ -13,7 +13,7 @@ function randomQuote() {
   });
 };
 
-randomQuote();
+randomJoke();
 genQuoteBtn.addEventListener('click', () => {
-    randomQuote();
+    randomJoke();
 });
