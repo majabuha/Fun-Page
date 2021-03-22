@@ -16,24 +16,24 @@ body {
     padding: 2rem;
 }
 
-.quote-wrapper {
+.joke-wrapper {
     background-color: #fff;
     border-radius: 20px;
     padding: 4rem 1.5rem;
     box-shadow: 0px 2px 15px -5px rgba(0, 0, 0, 1);
 }
 
-.quote-wrapper h2 {
+.joke-wrapper h2 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
-.quote-wrapper blockquote {
+.joke-wrapper blockquote {
     padding: 1.4rem 0;
     font-weight: 400;
 }
 
-#gen-quote-btn {
+#gen-joke-btn {
     font-size: 1.1rem;
     border: none;
     background-color: rgb(30, 45, 51);
@@ -44,12 +44,12 @@ body {
     outline: 0;
 }
 
-#gen-quote-btn:hover {
+#gen-joke-btn:hover {
     box-shadow: 0px 0px 9px 0px rgb(30, 45, 51);
 }
 
 @media screen and (min-width: 680px){
-    .quote-wrapper{
+    .joke-wrapper{
         width: 600px;
         
     }
