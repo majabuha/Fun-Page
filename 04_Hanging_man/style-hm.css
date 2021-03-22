@@ -33,9 +33,13 @@
     margin-top: 2rem;
 }
 
+
 @media screen and (max-width: 640px){
-    * {
-        width: auto;
+    .text-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
